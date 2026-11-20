@@ -1,0 +1,15 @@
+{
+  "buildCommand": "tsc && vite build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/dispatcher",
+      "destination": "/api/dispatcher"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
